@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,153 +17,353 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71O-9e-B49">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71O-9e-B49">
                                 <rect key="frame" x="139" y="79" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi7-MV-Dqf">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi7-MV-Dqf">
                                 <rect key="frame" x="34" y="128" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="C">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xy9-Gp-hQZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVm-hO-8tT">
-                                <rect key="frame" x="164" y="128" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVm-hO-8tT">
+                                <rect key="frame" x="125" y="170" width="125" height="99.5"/>
                                 <color key="backgroundColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="+/-">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="negateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hlt-4K-prH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHj-9k-WkA">
-                                <rect key="frame" x="29" y="215" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHj-9k-WkA">
+                                <rect key="frame" x="29" y="269.5" width="65" height="99.5"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="7">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sevenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O08-Ek-Guz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ura-e0-Ap3">
-                                <rect key="frame" x="155" y="215" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ura-e0-Ap3">
+                                <rect key="frame" x="155" y="269.5" width="65" height="99.5"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="8">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="eightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewJ-fw-uVr"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry1-wp-OE6">
-                                <rect key="frame" x="267" y="215" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry1-wp-OE6">
+                                <rect key="frame" x="267" y="269.5" width="65" height="99.5"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="9">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nineTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Enc-Yj-tbu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg0-uE-hsV">
-                                <rect key="frame" x="29" y="306" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg0-uE-hsV">
+                                <rect key="frame" x="29" y="369" width="65" height="99"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="4">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fourTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3kz-Qd-WKs"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="533-pZ-bJ7">
-                                <rect key="frame" x="155" y="306" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="533-pZ-bJ7">
+                                <rect key="frame" x="155" y="369" width="65" height="99"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="5">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fiveTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvK-kS-o3g"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xv-Hn-fyQ">
-                                <rect key="frame" x="267" y="305" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xv-Hn-fyQ">
+                                <rect key="frame" x="267" y="369" width="65" height="99"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="6">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sixTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ai-LK-mg5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQs-uL-GOK">
-                                <rect key="frame" x="29" y="399" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQs-uL-GOK">
+                                <rect key="frame" x="29" y="468" width="65" height="99.5"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="oneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkv-LG-dqy"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxi-9H-EDo">
-                                <rect key="frame" x="155" y="399" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxi-9H-EDo">
+                                <rect key="frame" x="155" y="468" width="65" height="99.5"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="2">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="twoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTi-IG-bgS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-XB-Z9U">
-                                <rect key="frame" x="267" y="399" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-XB-Z9U">
+                                <rect key="frame" x="267" y="468" width="65" height="99.5"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="3">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="threeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTp-CK-26W"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDv-aO-Bvv">
-                                <rect key="frame" x="29" y="490" width="191" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDv-aO-Bvv">
+                                <rect key="frame" x="0.0" y="567.5" width="250" height="99.5"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title="0">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="zeroTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zvq-i8-IrC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-b9-HEK">
-                                <rect key="frame" x="267" y="490" width="65" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-b9-HEK">
+                                <rect key="frame" x="250" y="567.5" width="125" height="99.5"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
-                                <state key="normal" title="+/-">
+                                <state key="normal" title=".">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="decimalTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7w-cL-0qw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPi-g9-r2f">
-                                <rect key="frame" x="260" y="135" width="102" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPi-g9-r2f">
+                                <rect key="frame" x="250" y="170" width="125" height="99.5"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="23"/>
                                 <state key="normal" title="Converter">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="converterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKw-pD-MF1"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UlQ-0b-HIp">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UlQ-0b-HIp">
                                 <rect key="frame" x="139" y="32" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.86274509803921573" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="yhB-CF-mlE"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="iHj-9k-WkA" secondAttribute="width" id="04N-6y-2SC"/>
+                            <constraint firstItem="TPi-g9-r2f" firstAttribute="leading" secondItem="iVm-hO-8tT" secondAttribute="trailing" id="13p-0R-OGx"/>
+                            <constraint firstItem="GDv-aO-Bvv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Lj-IK-A58"/>
+                            <constraint firstItem="GDv-aO-Bvv" firstAttribute="top" secondItem="sQs-uL-GOK" secondAttribute="bottom" id="2rN-57-GJ0"/>
+                            <constraint firstItem="UlQ-0b-HIp" firstAttribute="height" secondItem="71O-9e-B49" secondAttribute="height" id="3do-G3-g5C"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="pxi-9H-EDo" secondAttribute="width" id="5Ew-et-GID"/>
+                            <constraint firstItem="sQs-uL-GOK" firstAttribute="top" secondItem="zg0-uE-hsV" secondAttribute="bottom" id="5uK-oc-M2e"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="533-pZ-bJ7" secondAttribute="height" id="75T-WG-dSP"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="S7L-XB-Z9U" secondAttribute="height" id="7A7-hc-faB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDv-aO-Bvv" secondAttribute="bottom" id="7IC-F3-ycu"/>
+                            <constraint firstItem="GDv-aO-Bvv" firstAttribute="centerY" secondItem="XSg-b9-HEK" secondAttribute="centerY" id="8eh-lC-029"/>
+                            <constraint firstItem="S7L-XB-Z9U" firstAttribute="leading" secondItem="pxi-9H-EDo" secondAttribute="trailing" id="8jj-0g-wZm"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="iHj-9k-WkA" secondAttribute="height" id="9YH-JC-L8G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UlQ-0b-HIp" secondAttribute="trailing" id="9jW-N6-gcD"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="GDv-aO-Bvv" secondAttribute="height" id="AD7-2g-UVL"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="sQs-uL-GOK" secondAttribute="height" id="ANq-LR-ywe"/>
+                            <constraint firstItem="TPi-g9-r2f" firstAttribute="top" secondItem="71O-9e-B49" secondAttribute="bottom" id="BRh-po-sHV"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="XSg-b9-HEK" secondAttribute="height" id="Bzn-X1-0yk"/>
+                            <constraint firstItem="iHj-9k-WkA" firstAttribute="top" secondItem="gi7-MV-Dqf" secondAttribute="bottom" id="CC1-SM-3kq"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="iVm-hO-8tT" secondAttribute="height" id="DJ6-05-0fp"/>
+                            <constraint firstItem="533-pZ-bJ7" firstAttribute="leading" secondItem="zg0-uE-hsV" secondAttribute="trailing" id="Dgq-au-2zT"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="TPi-g9-r2f" secondAttribute="height" id="Gf6-Jr-cxG"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="ura-e0-Ap3" secondAttribute="width" id="GhK-Dy-fxE"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="S7L-XB-Z9U" secondAttribute="width" id="HlW-Kn-qcm"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="Ry1-wp-OE6" secondAttribute="width" id="Ix7-BH-Ijm"/>
+                            <constraint firstItem="iVm-hO-8tT" firstAttribute="leading" secondItem="gi7-MV-Dqf" secondAttribute="trailing" id="Ixa-Ef-hiw"/>
+                            <constraint firstItem="pxi-9H-EDo" firstAttribute="centerY" secondItem="S7L-XB-Z9U" secondAttribute="centerY" id="MPi-nH-1qZ"/>
+                            <constraint firstItem="UlQ-0b-HIp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nbo-cm-UVy"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="TPi-g9-r2f" secondAttribute="width" id="NsM-AQ-xFP"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="Ry1-wp-OE6" secondAttribute="height" id="Nxn-KP-1Vf"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="2Xv-Hn-fyQ" secondAttribute="width" id="OmJ-iB-TN0"/>
+                            <constraint firstItem="2Xv-Hn-fyQ" firstAttribute="centerY" secondItem="533-pZ-bJ7" secondAttribute="centerY" id="PaL-iJ-Rdx"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="2Xv-Hn-fyQ" secondAttribute="height" id="SS3-yo-9UL"/>
+                            <constraint firstItem="ura-e0-Ap3" firstAttribute="centerY" secondItem="iHj-9k-WkA" secondAttribute="centerY" id="TXe-qm-jjJ"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="sQs-uL-GOK" secondAttribute="width" id="U3P-Nn-cFG"/>
+                            <constraint firstItem="UlQ-0b-HIp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VvI-wq-ERV"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="top" secondItem="71O-9e-B49" secondAttribute="bottom" id="WFS-yV-WdO"/>
+                            <constraint firstItem="Ry1-wp-OE6" firstAttribute="centerY" secondItem="ura-e0-Ap3" secondAttribute="centerY" id="Wk2-7q-fqf"/>
+                            <constraint firstItem="2Xv-Hn-fyQ" firstAttribute="leading" secondItem="533-pZ-bJ7" secondAttribute="trailing" id="Xmf-pT-0RM"/>
+                            <constraint firstItem="ura-e0-Ap3" firstAttribute="leading" secondItem="iHj-9k-WkA" secondAttribute="trailing" id="ZZH-N8-F6m"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="zg0-uE-hsV" secondAttribute="height" id="auN-WU-bqD"/>
+                            <constraint firstItem="71O-9e-B49" firstAttribute="top" secondItem="UlQ-0b-HIp" secondAttribute="bottom" id="bxO-Wx-zSG"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="iVm-hO-8tT" secondAttribute="width" id="cAL-uA-aeE"/>
+                            <constraint firstItem="iVm-hO-8tT" firstAttribute="top" secondItem="71O-9e-B49" secondAttribute="bottom" id="fBZ-Wk-2PO"/>
+                            <constraint firstItem="pxi-9H-EDo" firstAttribute="leading" secondItem="sQs-uL-GOK" secondAttribute="trailing" id="fib-ha-ZZm"/>
+                            <constraint firstItem="XSg-b9-HEK" firstAttribute="leading" secondItem="GDv-aO-Bvv" secondAttribute="trailing" id="fpv-al-nI5"/>
+                            <constraint firstItem="533-pZ-bJ7" firstAttribute="centerY" secondItem="zg0-uE-hsV" secondAttribute="centerY" id="g2K-pH-OyA"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="ura-e0-Ap3" secondAttribute="height" id="hgb-rR-S8p"/>
+                            <constraint firstItem="sQs-uL-GOK" firstAttribute="centerY" secondItem="pxi-9H-EDo" secondAttribute="centerY" id="i9T-8Y-Bjs"/>
+                            <constraint firstItem="71O-9e-B49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kEr-Fs-g6q"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="533-pZ-bJ7" secondAttribute="width" id="kgT-8n-5Fb"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="XSg-b9-HEK" secondAttribute="width" id="lxY-v7-vrG"/>
+                            <constraint firstItem="Ry1-wp-OE6" firstAttribute="leading" secondItem="ura-e0-Ap3" secondAttribute="trailing" id="mfe-Vi-pYp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XSg-b9-HEK" secondAttribute="trailing" id="rJy-D3-xRW"/>
+                            <constraint firstItem="zg0-uE-hsV" firstAttribute="top" secondItem="iHj-9k-WkA" secondAttribute="bottom" id="rXf-9R-vnd"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u0v-jb-ifR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="71O-9e-B49" secondAttribute="trailing" id="w2m-uk-zg4"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="height" secondItem="pxi-9H-EDo" secondAttribute="height" id="xTt-aC-3lU"/>
+                            <constraint firstItem="gi7-MV-Dqf" firstAttribute="width" secondItem="zg0-uE-hsV" secondAttribute="width" id="yg4-8T-P5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TPi-g9-r2f" secondAttribute="trailing" id="zfF-Qm-HJQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
